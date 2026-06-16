@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "UTS_AISHA/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "UTS_AISHA/wsgi.py"
+    }
+  ]
+}

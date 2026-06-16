@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #c6d0d4;
     color: #111;
@@ -17,9 +21,10 @@ body {
 
 .layar-penuh {
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
 }
+
 
 
 .kolom {
@@ -35,7 +40,12 @@ body {
     background-color: #c1e6f7;
 }
 
+.kolom-pengalaman {
+    flex: 1.2;
+}
+
 .kolom-foto {
+    flex: 1.5;
     padding: 0;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
@@ -121,6 +131,52 @@ body {
     color: #111;
 }
 
- 
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+
+    .layar-penuh {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .kolom {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .kolom-foto {
+        order: -1;
+        width: 100%;
+        height: 400px;
+    }
+
+    .kolom-foto img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .nama-utama {
+        font-size: 3rem;
+    }
 
 
+    .label-kategori {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nama-utama {
+        font-size: 2.2rem;
+    }
+
+    .kolom {
+        padding: 20px;
+    }
+
+}
