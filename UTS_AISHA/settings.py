@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-%(8$p8o#go59&&-edu%f-o__pv#t$^f0+kw5pvmsrn2if&nx&z
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "uts-aisha.vercel.app",
     ".vercel.app",
     "localhost",
     "127.0.0.1"
@@ -51,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
@@ -120,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
