@@ -182,5 +182,65 @@ body {
 
 }
  
+.halaman-dua{
+    width:100%;
+    min-height:100vh;
+    padding:80px;
+    background:#f7f7f7;
+    clear:both;
+}
 
+.judul-halaman{
+    text-align:center;
+    margin-bottom:60px;
+}
 
+.judul-halaman h1{
+    font-size:48px;
+    color:#4f5b6e;
+    margin-bottom:10px;
+}
+
+.judul-halaman p{
+    color:#666;
+    font-size:18px;
+}
+
+.grid-portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    color:#4f5b6e;
+    margin-bottom:25px;
+    border-bottom:2px solid #d7dde5;
+    padding-bottom:10px;
+}
+
+.isi-card{
+    margin-bottom:20px;
+}
+
+.isi-card h3{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.isi-card p{
+    color:#666;
+    line-height:1.6;
+}
